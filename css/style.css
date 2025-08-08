@@ -37,8 +37,10 @@
 }
 
 body {
-  background-color: var(--white-color);
   font-family: var(--body-font-family); 
+  margin: 0;
+  min-height: 200vh;
+  background: linear-gradient(to bottom, red 0%, black 80%, black 100%);
 }
 
 
@@ -127,10 +129,6 @@ strong {
 .section-padding {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-
-.section-bg {
-  background-color: var(--section-bg-color);
 }
 
 .section-overlay {
@@ -520,7 +518,6 @@ strong {
   HERO        
 -----------------------------------------*/
 .hero-section {
-  background-color: var(--section-bg-color);
   position: relative;
   overflow: hidden;
   min-height: 620px;
@@ -551,7 +548,7 @@ hero-section::after {
 }
 
 .small-text {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .hero-section .custom-border-btn {
@@ -593,7 +590,6 @@ hero-section::after {
   ABOUT              
 -----------------------------------------*/
 .about-section {
-  background-color: var(--secondary-color);
   position: relative;
 }
 
@@ -626,7 +622,6 @@ hero-section::after {
 }
 
 .about-section h6 {
-  color: var(--secondary-color);
 }
 
 .team-block-wrap {
@@ -634,11 +629,24 @@ hero-section::after {
   border-radius: var(--border-radius-medium);
   position: relative;
   overflow: hidden;
-  max-height: 450px;
-  cursor: pointer;
-}
+  max-height: 450px;}
 
 .team-block-wrap:hover .team-block-image {
+  transform: scale(1.2);
+}
+
+.crew-block-wrap {
+  background-color: var(--secondary-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.crew-block-wrap:hover .crew-block-image {
   transform: scale(1.2);
 }
 
@@ -650,7 +658,15 @@ hero-section::after {
   display: block;
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 300px;
+  transition: all 0.3s;
+}
+
+.crew-block-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 50%;
   transition: all 0.3s;
 }
 
@@ -675,7 +691,6 @@ hero-section::after {
   OUR MENU              
 -----------------------------------------*/
 .menu-section {
-  background-image: url('../images/happy-waitress-giving-coffee-customers-while-serving-them-coffee-shop.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -736,7 +751,6 @@ hero-section::after {
   REVIEWS              
 -----------------------------------------*/
 .reviews-section {
-  background-color: var(--primary-color);
 }
 
 .reviews-block {
@@ -800,7 +814,6 @@ hero-section::after {
   BOOKING SECTION              
 -----------------------------------------*/
 .booking-section {
-  background-image: url('../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -849,7 +862,6 @@ hero-section::after {
   CONTACT               
 -----------------------------------------*/
 .contact-section {
-  background-image: url('../images/young-female-barista-wear-face-mask-serving-take-away-hot-coffee-paper-cup-consumer-cafe.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -968,7 +980,6 @@ hero-section::after {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--section-bg-color);
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -1019,7 +1030,6 @@ hero-section::after {
 }
 
 .social-icon-link {
-  background: var(--section-bg-color);
   color: var(--white-color);
   font-size: var(--menu-font-size);
   display: block;
