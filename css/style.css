@@ -1,11 +1,3 @@
-/*
-
-Tooplate 2137 Barista
-
-https://www.tooplate.com/view/2137-barista-cafe
-
-*/
-
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
@@ -758,13 +750,28 @@ hero-section::after {
   border-top-color: rgba(255, 255, 255, 0.35) !important;
 }
 
-.reviews-block-image-wrap {
-  background-image: url('../images/mid-section-waitress-wiping-espresso-machine-with-napkin-cafa-c.jpg');
+.reviews-block-image-wrap1 {
+  background-image: url('../images/desnudarse.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 30px;
 }
+.reviews-block-image-wrap2 {
+  background-image: url('../images/identidad.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.reviews-block-image-wrap3 {
+  background-image: url('../images/vulnerabilidad.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
 
 .reviews-block-image {
   border-radius: var(--border-radius-large);
