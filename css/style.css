@@ -4,7 +4,7 @@
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #530101;
-  --secondary-color:              #FF0000;
+  --secondary-color:              #7e0303;
   --section-bg-color:             #2c0101;
   --custom-btn-bg-color:          #7e0303;
   --custom-btn-bg-hover-color:    #7e0303;
@@ -12,9 +12,9 @@
   --p-color:                      #7e0303;
   --border-color:                 #7e0303;
   --link-hover-color:             #7e0303;
-  --golden-color:             #FFD700;
+  --golden-color:                 #FFD700;
 
-  --body-font-family:             'Plus Jakarta Sans', sans-serif;
+  --body-font-family:             'Sans', sans-serif;
 
   --h1-font-size:                 68px;
   --h2-font-size:                 46px;
@@ -43,7 +43,6 @@ body {
   min-height: 200vh;
   background: linear-gradient(to bottom, red 0%, black 80%, black 100%);
 }
-
 
 /*---------------------------------------
   TYPOGRAPHY               
@@ -642,7 +641,7 @@ hero-section::after {
   position: relative;
   overflow: hidden;
   display: block;
-  max-width: 50%;
+  max-width: 30%;
   height: auto;
   margin: 0 auto;
 }
@@ -765,28 +764,13 @@ hero-section::after {
   border-top-color: rgba(255, 255, 255, 0.35) !important;
 }
 
-.reviews-block-image-wrap1 {
-  background-image: url('../images/desnudarse.jpeg');
+.reviews-block-image-wrap {
+  background-color: var(--secondary-color);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 30px;
 }
-.reviews-block-image-wrap2 {
-  background-image: url('../images/identidad.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-}
-.reviews-block-image-wrap3 {
-  background-image: url('../images/vulnerabilidad.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 30px;
-}
-
 
 .reviews-block-image {
   border-radius: var(--border-radius-large);
