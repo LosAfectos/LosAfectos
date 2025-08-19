@@ -94,7 +94,7 @@ p {
   font-size: var(--p-font-size);
   font-weight: var(--font-weight-light);
   line-height: 1.2;
-  letter-spacing: 0.204em;
+  letter-spacing: 0.194em;
 }
 
 ul li {
@@ -1227,4 +1227,5 @@ hero-section::after {
   }
   .golden-text {
     color: var(--golden-color);
+
   }
