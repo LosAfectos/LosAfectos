@@ -257,6 +257,8 @@
                     </div>
                 </div>
             </footer>
+            <footer class="derechos">
+                &copy; <span id="anio"></span> Jorge Armando "Joggy" Aguirre Flores. Todos los derechos reservados.<img src="images/extraterra.png" class="extraterra"></footer>
         </main>
         <canvas id="tv-static"></canvas>
         <!-- JAVASCRIPT FILES -->
@@ -299,9 +301,9 @@
               const buf = imageData.data;
               for (let i = 0; i < buf.length; i += 4) {
                 const c = Math.random() * 255;
-                buf[i] = c;
-                buf[i+1] = c - 100;
-                buf[i+2] = c - 100;
+                buf[i] = c;        // R
+                buf[i+1] = c - 100;      // G (subtono verdoso)
+                buf[i+2] = c - 100;      // B
                 buf[i+3] = 255;
               }
               ctx.putImageData(imageData, 0, 0);
@@ -337,6 +339,8 @@
             }
             window.addEventListener('scroll', updateOpacity);
         </script>
+        <script>
+            document.getElementById('anio').textContent = new Date().getFullYear();
+        </script>
     </body>
-
 </html>
