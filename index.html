@@ -299,9 +299,9 @@
               const buf = imageData.data;
               for (let i = 0; i < buf.length; i += 4) {
                 const c = Math.random() * 255;
-                buf[i] = c;        // R
-                buf[i+1] = c;      // G (subtono verdoso)
-                buf[i+2] = c;      // B
+                buf[i] = c;
+                buf[i+1] = c - 100;
+                buf[i+2] = c - 100;
                 buf[i+3] = 255;
               }
               ctx.putImageData(imageData, 0, 0);
@@ -338,4 +338,5 @@
             window.addEventListener('scroll', updateOpacity);
         </script>
     </body>
+
 </html>
